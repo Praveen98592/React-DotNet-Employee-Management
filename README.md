@@ -1,4 +1,4 @@
-# Employee Management System
+# Employee Management System - Full-Stack Application
 
 A full-stack Employee Management application built using **React, TypeScript, ASP.NET Core Web API, Entity Framework Core, and SQL Server**.
 
