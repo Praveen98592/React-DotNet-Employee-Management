@@ -4,6 +4,10 @@ A full-stack Employee Management application built using **React, TypeScript, AS
 
 The application demonstrates end-to-end CRUD operations with a React frontend communicating with an ASP.NET Core REST API.
 
+## Application Screenshot
+
+![Employee Management System](images/employee-management-system.png)
+
 ## Technologies Used
 
 ### Frontend
