@@ -1,0 +1,72 @@
+@EmployeeManagementAPI_HostAddress = http://localhost:5073
+
+### Get all departments
+
+GET {{EmployeeManagementAPI_HostAddress}}/api/departments
+Accept: application/json
+
+###
+
+### Get all employees
+
+GET {{EmployeeManagementAPI_HostAddress}}/api/employees
+Accept: application/json
+
+###
+
+
+### Add employee
+
+POST {{EmployeeManagementAPI_HostAddress}}/api/employees
+Content-Type: application/json
+{
+  "name": "Mary",
+  "email": "mary@example.com",
+  "salary": 80000,
+  "gender":1,
+  "dateOfBirth": "1992-08-20",
+  "isActive": true,
+  "departmentId": 2
+}
+
+###
+
+### Get employee by ID
+
+GET {{EmployeeManagementAPI_HostAddress}}/api/employees/2
+Accept: application/json
+
+###
+
+
+### Update employee
+
+PUT {{EmployeeManagementAPI_HostAddress}}/api/employees/4
+Content-Type: application/json
+{
+  "name": "Mary Updated",
+  "email": "mary.updated@example.com",
+  "salary": 85000,
+  "gender":1,
+  "dateOfBirth": "1992-08-20",
+  "isActive": true,
+  "departmentId": 999
+}
+
+###
+
+### Delete employee by ID
+
+DELETE {{EmployeeManagementAPI_HostAddress}}/api/employees/3
+Accept: application/json
+
+###
+
+
+### Test DELETE CORS response
+
+DELETE http://localhost:5073/api/employees/9999
+Origin: http://localhost:5173
+Accept: application/json'
+
+###
